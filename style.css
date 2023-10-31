@@ -13,6 +13,9 @@ header{
     color: white;
     text-align: center;
     padding: 20px;
+    box-shadow: 5px 5px 5px 8px rgb(210, 213, 213);
+    position: sticky;
+    top: 0;
 }
 
 nav ul, a {
@@ -43,3 +46,17 @@ p {
     padding-top: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 2s ease-in-out 0s forwards;
+  }
+  
+  
