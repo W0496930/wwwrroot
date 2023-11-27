@@ -1,0 +1,194 @@
+body,
+h1,
+h2,
+h3,
+ul {
+    margin: 0;
+    padding: 0;
+    color: black
+    "muli" Arial, Helvetica, sans-serif
+}
+
+body {
+    background-color: white;
+    font-family: "muli",Arial, Helvetica, sans-serif;
+}
+
+nav ul,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255 21 21);
+}
+
+nav ul li a {
+    display: inline;
+    margin-right: 10px;
+    color: black;
+}
+
+header {
+    background-color: #004477;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    top: 0;
+    font-family: "muli" Arial, Helvetica, sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.nscc.ca/img/campuses/strait/pg-strait-1.jpg");
+    height: 600px; /* Adjust the height as needed */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+li a {
+    color: rgb(255, 255, 255);
+}
+
+nav{
+    background-color: #1B5C8C;
+    text-align: center;
+    font-family: "muli" Arial, Helvetica, sans-serif;
+}
+    
+.nav-link {
+    color: #FFFFFF !important;
+}
+.logo-image{
+    width: 100;
+    height: 100;
+    border-radius: 100;
+    overflow: hidden;
+    margin-left: 15px;
+}
+/* Styles for the left and right sections */
+.hprd-ql-left,
+.hprd-ql-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+/* Styles for the article content */
+.hprd-ql-content {
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+@media (max-width: 768px) {
+    .hprd-ql-left,
+    .hprd-ql-right {
+        text-align: left;
+    }
+}
+
+/* Style the container with a rounded border, grey background and some padding and margin */
+.container-3 {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+  }
+  
+  /* Clear floats after containers */
+  .container-3::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+  .container-3 img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Increase the font-size of a span element */
+  .container-3 span {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  /* Add media queries for responsiveness. This will center both the text and the image inside the container */
+  @media (max-width: 500px) {
+    .container-3 {
+      text-align: center;
+    }
+  
+    .container-3 img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+  }
+
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  text-align: left;
+  }
+
+  .container-4{
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .container-5{
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+  }
