@@ -72,7 +72,7 @@ header {
   font-size: 16px;
 }
 
-/* Add hover effect to the search button */
+/*Add hover effect to the search button */
 #searchButton:hover {
   background-color: #b6b5b5;
 }
@@ -91,17 +91,17 @@ header {
   }
 }
 
-/* The hero image */
+/*The hero image */
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.nscc.ca/img/campuses/strait/pg-strait-1.jpg");
-    height: 600px; /* Adjust the height as needed */
+    height: 600px; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
-/* Place text in the middle of the image */
+/*Place text in the middle of the image */
 .hero-text {
   text-align: center;
   position: absolute;
@@ -132,19 +132,19 @@ nav{
     overflow: hidden;
     margin-left: 15px;
 }
-/* Styles for the left and right sections */
+/*Styles for the left and right sections */
 .hprd-ql-left,
 .hprd-ql-right {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 20px; /* Adjust the margin as needed */
+    margin-bottom: 20px; 
 }
 
-/* Styles for the article content */
+/*Styles for the article content */
 .hprd-ql-content {
-    margin-top: 20px; /* Adjust the margin as needed */
+    margin-top: 20px; 
 }
 
 @media (max-width: 768px) {
@@ -154,7 +154,7 @@ nav{
     }
 }
 
-/* Style the container with a rounded border, grey background and some padding and margin */
+/*Style the container with a rounded border, grey background and some padding and margin */
 .container-3 {
     border: 2px solid #ccc;
     background-color: #eee;
@@ -163,27 +163,27 @@ nav{
     margin: 16px 0;
   }
   
-  /* Clear floats after containers */
+  /*Clear floats after containers */
   .container-3::after {
     content: "";
     clear: both;
     display: table;
   }
   
-  /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+  /*Float images inside the container to the left. Add a right margin, and style the image as a circle */
   .container-3 img {
     float: left;
     margin-right: 20px;
     border-radius: 50%;
   }
   
-  /* Increase the font-size of a span element */
+  /*Increase the font-size of a span element */
   .container-3 span {
     font-size: 20px;
     margin-right: 15px;
   }
   
-  /* Add media queries for responsiveness. This will center both the text and the image inside the container */
+  /*Add media queries for responsiveness. This will center both the text and the image inside the container */
   @media (max-width: 500px) {
     .container-3 {
       text-align: center;
