@@ -154,6 +154,19 @@ nav{
     }
 }
 
+/* Styles for the container wrapping each section */
+.hprd-ql-container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.container-2 {
+  padding: 20px; 
+}
+
 /*Style the container with a rounded border, grey background and some padding and margin */
 .container-3 {
     border: 2px solid #ccc;
@@ -256,4 +269,5 @@ nav{
 .fa-solid  {
   color: #1B5C8C;
 }
+
 
