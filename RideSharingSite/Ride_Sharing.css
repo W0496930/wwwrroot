@@ -22,10 +22,14 @@ a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-
+/*Added an underline effect when you hover over each link on the navbar*/
+a.nav-link:hover, a.nav-link:active {
+  text-decoration: underline;
+}
 nav ul li a {
     display: inline;
-    margin-right: 10px;
+    margin-right: 5px;
+    margin-left: 15px;
     color: black;
 }
 
@@ -34,7 +38,7 @@ header {
   color: rgb(255, 255, 255);
   text-align: left;
   padding: 20px;
-  padding-top: 50px; /* Adjust the top padding as needed */
+  padding-top: 50px; 
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   margin-top: 0px;
   overflow: hidden;
