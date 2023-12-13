@@ -1,155 +1,281 @@
 
 
+body,
+h1,
+h2,
+h3,
+ul {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family:"Open Sans", Arial, Helvetica, sans-serif
+}
+
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-color: white;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    padding: 0;
     margin: 0;
 }
 
-header {
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    text-align: left;
-    padding: 20px;
-    padding-top: 50px; 
-    font-family:"Montserrat";
-    margin-top: 0px;
-    overflow: hidden;
-    
-  }
-
-  nav ul,
+nav ul,
 a {
     list-style: none;
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-/*Added an underline and  color effect when you hover over each link on the navbar*/
+/*Added an underline effect when you hover over each link on the navbar*/
 a.nav-link:hover, a.nav-link:active {
   text-decoration: underline;
-  background-color: #424345;
 }
-
 nav ul li a {
     display: inline;
     margin-right: 5px;
     margin-left: 15px;
     color: black;
-    font-family:"Montserrat";
 }
 
+header {
+  background-color: #004477;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  padding: 20px;
+  padding-top: 50px; 
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+.custom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+/*The hero image */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.nscc.ca/img/campuses/strait/pg-strait-1.jpg");
+    height: 600px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/*Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
 li a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 nav{
-    background-color: #363636;
+    background-color: #1B5C8C;
     text-align: center;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     height: 3.5%;
 }
     
 .nav-link {
-    color: #ffffff !important;
+    color: #FFFFFF !important;
 }
-
-.some-page-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
-    margin: 15px;
-    background-color: rgb(255, 255, 255);
-    flex: 1;
-    padding: 15px;
-  }
-  
-  .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 1500px; 
-    
-    width: 100%;
-  }
-  
-  .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    width: 100%;
-  }
-
-  /*added rounded borders to the column*/
-  .column-1, .column-2 {
-    background-color: #e0dfdf;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 10px;
-    text-align: justify;
-    font-family: "Montserrat";
-    height: 100%;
-}
-
-
-/*adjusting resizability of columns*/
-  @media (max-width: 767px) {
-    .column-1,
-    .column-2 {
-        width: 100%;
-        margin: 0;
-    }
-}
-  
-/* Hover style for links */
-a:hover {
-    color: darkblue;
-}
-
-/* Added space for the logo in the navbar */
-.navbar-brand {
-    margin-right: 10px; 
+.logo-image{
+    width: 100;
+    height: 100;
+    border-radius: 100;
+    overflow: hidden;
     margin-left: 15px;
 }
+/*Styles for the left and right sections */
+.hprd-ql-left,
+.hprd-ql-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-/* Style for the logo */
-.navbar-brand img {
-    max-width: 100%; 
+/*Styles for the article content */
+.hprd-ql-content {
+    margin-top: 20px; 
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .hprd-ql-left,
+    .hprd-ql-right {
+        text-align: left;
+    }
+}
+
+/* Styles for the container wrapping each section */
+.hprd-ql-container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
 }
 
 .container-2 {
+  padding: 20px; 
+}
+
+/*Style the container with a rounded border, grey background and some padding and margin */
+.container-3 {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+  }
+  
+  /*Clear floats after containers */
+  .container-3::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /*Float images inside the container to the left. Add a right margin, and style the image as a circle */
+  .container-3 img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  /*Increase the font-size of a span element */
+  .container-3 span {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  /*Add media queries for responsiveness. This will center both the text and the image inside the container */
+  @media (max-width: 500px) {
+    .container-3 {
+      text-align: center;
+    }
+  
+    .container-3 img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+  }
+
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  text-align: left;
+  }
+
+  .container-4{
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .container-5{
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+  }
+  .footer {
+    background-color: #004477; /* Same background color as the header */
+    color: rgb(255, 255, 255); /* Same text color as the header */
+    text-align: left;
+    padding: 25px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif /* Same font family as the header */
+  }
+  
+  .container-6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer {
-    background-color: #000000; 
-    color: rgb(255, 255, 255); 
-    text-align: left;
-    padding: 25px;
-    font-family: "Montserrat" 
-  }
+.fa-solid  {
+  color: #1B5C8C;
+}
 
-  /* Align the GitHub icon to the right in the footer */
-.footer ul {
+/*Custom searchbar from https://uiverse.io/LightAndy1/tough-turkey-35*/
+.group {
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 170px;
 }
 
-.footer li {
-  margin-left: auto;
+.input {
+  width: 100%;
+  height: 35px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f4;
+  color: #0d0c22;
+  transition: 0.3s ease;
 }
 
- .col{
-    flex: 1;
-    padding: 16px;
- }
+.input::placeholder {
+  color: #9e9ea7;
+}
 
- 
- 
+.input:focus,
+input:hover {
+  outline: none;
+  border-color: rgba(234, 226, 183, 0.4);
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(183, 195, 234, 0.1);
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+}
+
+.nav-item{
+  margin-right: 1px;
+}
