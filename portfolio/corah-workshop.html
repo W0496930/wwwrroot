@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Corah Workshop - Project Details</title>
+  <link rel="stylesheet" href="corah-workshop.css">
+</head>
+<body>
+  <!-- Header with Navbar (re-using main page's navbar style) -->
+  <header>
+    <h1>William Taylor</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html#about">About Me</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills & Abilities</a></li>
+        <li><a href="index.html#work-experience">Work Experience</a></li>
+        <li><a href="index.html#notable-courses">Notable Courses</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Description Section -->
+    <section id="description">
+      <h2>Project Overview</h2>
+      <p>
+        This assignment was a part of our Professional Practice for IT (ICOM2703) course. We were assigned groups and tasked to create a workshop where we presented an IT topic to the Corah group, which is a group of seniors that do activities every week on campus. Our group chose to cover AI, discussing both its advantages and potential harmful uses, and discussing how they could use it.
+      </p>
+    </section>
+
+    <!-- Photos Section -->
+    <section id="photos">
+      <h2>Project Photos</h2>
+      <div class="photo-grid">
+        <img src="corah-photo-1.jpg" alt="Corah Workshop Photo 1">
+        <img src="corah-photo-2.jpg" alt="Corah Workshop Photo 2">
+        <img src="corah-photo-3.jpg" alt="Corah Workshop Photo 3">
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for Expanded Images -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+  </div>
+
+  <!-- Footer (Sticky at the bottom) -->
+  <footer>
+    <p>&copy; 2025 William Taylor. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Modal -->
+  <script>
+    // Get modal elements
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modal-img");
+    const closeBtn = document.querySelector(".close");
+
+    // Add click event listener to each image in the photo grid
+    const images = document.querySelectorAll(".photo-grid img");
+    images.forEach(img => {
+      img.addEventListener("click", function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      });
+    });
+
+    // Close the modal when the close button is clicked
+    closeBtn.addEventListener("click", function() {
+      modal.style.display = "none";
+    });
+
+    // Also close modal when clicking outside the modal image
+    modal.addEventListener("click", function(e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>

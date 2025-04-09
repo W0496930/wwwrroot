@@ -1,0 +1,256 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #343535;  /* Dark background */
+  color: #e0e0e0;       /* Light text for contrast */
+}
+
+/* Header and Navigation */
+header {
+  background: #444;     /* Dark grey header */
+  color: #f0f0f0;       /* Very light text for header */
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  /* You can adjust font-size if needed */
+}
+
+header nav {
+  margin-top: 1em;  /* Adds extra space between the title and the navbar items */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ccc;         /* Light grey links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #fff;         /* White on hover */
+}
+
+
+/* Hero Section with Circular Picture and Info - Removed Box */
+/* Ensure the profile image in the hero section is centered */
+#hero img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #444;   /* Matching header grey */
+}
+
+/* Hero Info Styling */
+#hero-info {
+  text-align: center;
+  margin-top: 1em;
+  color: #e0e0e0;
+}
+#hero-info h2 {
+  font-size: 2em;
+  margin: 0.5em 0 0.2em;
+}
+#hero-info p {
+  margin: 0.2em 0;
+}
+
+/* Section Styles */
+section {
+  padding: 2em;
+  margin: 1em auto;
+  max-width: 800px;
+  background: #3f3f3f;     /* Dark grey card background */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  color: #e0e0e0;
+}
+
+h2 {
+  color: #f0f0f0;
+}
+
+h3 {
+  color: #dcdcdc;
+}
+
+/* Artifact Styles */
+article.artifact {
+  border: 1px solid #555;
+  padding: 1em;
+  margin-bottom: 1em;
+  background: #4a4a4a;     /* Slightly lighter card for artifact detail */
+}
+
+article.artifact h3 {
+  margin-top: 0;
+}
+
+/* Work Experience & Notable Courses Sections */
+section#work-experience, section#notable-courses {
+  background: #3f3f3f;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.experience, .course {
+  border-bottom: 1px solid #555;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.experience:last-child, .course:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Download (View Resume) Button Styling */
+.download-resume {
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.download-resume .btn {
+  background: #777;
+  color: #fff;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.download-resume .btn:hover {
+  background: #555;
+  transform: scale(1.02);
+}
+
+/* Project Button Styling */
+.project-button {
+  display: block;
+  background: #777;            /* Default background color */
+  color: #ffffff;             /* White text */
+  border: 1px solid #777;     /* Box border */
+  padding: 1em 1.5em;         /* Bigger padding for a larger button look */
+  margin: 1em auto;           /* Spacing between projects */
+  width: 90%;                 /* Adjust width as needed */
+  text-decoration: none;      /* Remove underline */
+  border-radius: 5px;         /* Rounded corners */
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.project-button h3 {
+  margin: 0 0 0.5em;
+  font-size: 1.5em;
+}
+
+.project-button p {
+  margin: 0;
+  font-size: 1em;
+}
+
+.project-button:hover {
+  background: #555;           /* Darker background on hover */
+  transform: scale(1.02);      /* Slight enlargement on hover */
+}
+
+/* Contact Section Styles */
+#contact {
+  text-align: center;
+  padding: 2em;
+  background: #3f3f3f;         /* Dark grey card background */
+  border-radius: 5px;
+  margin: 1em auto;
+  max-width: 800px;
+}
+
+#contact h2 {
+  color: #f0f0f0;
+  margin-bottom: 1em;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.contact-item {
+  text-align: center;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+.contact-item i {
+  font-size: 3em;           /* Semi-large icon size */
+  display: block;
+  margin-bottom: 0.5em;
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 1.2em;
+  color: #e0e0e0;
+}
+
+.contact-item a:hover i {
+  color: #fff;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #444;
+  color: #f0f0f0;
+  margin-top: 2em;
+}
+/* Space out lists inside sections */
+section ul {
+  margin: 1em 0;     /* Adds space above and below the entire list */
+  padding-left: 1.5em; /* Ensures proper indentation for list items */
+}
+
+section ul li {
+  margin-bottom: 0.5em; /* Adds space between each list item */
+}
+/* Blurred Background Image */
+body::before {
+  content: "";
+  position: fixed;           /* Fixed so it stays in place as you scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('ingo.jpg') no-repeat center center/cover;
+  filter: blur(8px);         /* Adjust the blur intensity as needed */
+  z-index: -1;               /* Keeps the background behind your content */
+  opacity: 0.8;              /* Optional: adjust opacity for a softer effect */
+}
